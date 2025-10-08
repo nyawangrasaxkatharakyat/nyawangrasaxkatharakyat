@@ -1,0 +1,17 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    text-align: center;
+    background-color: #EFE6D3;
+    margin: 0;
+    padding-top: 0;
+    background-size: 100vw auto;
+    height: 100vh;
+}
