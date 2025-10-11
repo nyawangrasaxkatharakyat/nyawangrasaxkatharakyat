@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia KathaRakyatxNyawangRasa</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div id="opening">
+        <img class="logoKatha" src="img/KathaRakyat_LOGO.png">
+        <br><br>
+        <h1>Wilujeng Sumping ka Pameran</h1>
+        <img class="logoNyawang" src="img/Nyawang Rasa Logo.png">
+    </div>
+
+    <br>
+
+    <button id="startQuiz" class="question">Mulai eksplorasi</button>
+
+    <div class="question" id="question1" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Kamu memasuki sebuah rumah adat di Desa Baros dan menuju ke dapur tradisional mereka. Apa yang pertama kali kamu lakukan?</p>
+        <div class="answer"><button onclick="answerQuestion(1, 'a')">Memasak biji kopi di hawu</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'b')">Mengambil beras dari goa</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'c')">Mengasapkan bibit tanam</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'd')">Mengasapkan ubi di bara hangat</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'e')">Menyiapkan air panas untuk mandi</button></div>
+        <div class="answer"><button onclick="answerQuestion(1, 'f')">Membakar kayu untuk perapian</button></div>
+    </div>
+
+    <div class="question" id="question2" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Kamu mengalihkan pandanganmu ke hamparan sawah dan seorang petani mengajakmu untuk memanen padi. Alat apa yang kamu ambil?</p>
+        <div class="answer"><button onclick="answerQuestion(2, 'a')">Golok besar</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'b')">Arit tajam</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'c')">Gunting rumput</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'd')">Parang panjang</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'e')">Sabit kecil</button></div>
+        <div class="answer"><button onclick="answerQuestion(2, 'f')">Pisau dapur</button></div>
+    </div>
+
+    <div class="question" id="question3" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Setelah padi terkumpul, seorang ibu menawarkanmu untuk membawa satu tanaman lain sebagai kenang-kenangan. Tanaman apa yang kamu pilih?</p>
+        <div class="answer"><button onclick="answerQuestion(3, 'a')">Pohon Baros yang harum daunnya</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'b')">Kelapa di ujung kebun</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'c')">Pisang yang menguning sempurna</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'd')">Bambu di belakang rumah</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'e')">Mangga yang mulai ranum</button></div>
+        <div class="answer"><button onclick="answerQuestion(3, 'f')">Singkong yang siap dicabut</button></div>
+    </div>
+
+    <div class="question" id="question4" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Matahari mulai tenggelam dan warga mengajakmu menangkap ikan untuk makan malam. Alat apa yang kamu gunakan untuk menangkap ikan?</p>
+        <div class="answer"><button onclick="answerQuestion(4, 'a')">Tangan kosong</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'b')">Tombak bambu</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'c')">Serok bambu</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'd')">Bubu bambu</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'e')">Kail dan jala</button></div>
+        <div class="answer"><button onclick="answerQuestion(4, 'f')">Jaring tarik besar</button></div>
+    </div>
+
+    <div class="question" id="question5" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Setelah seharian membantu warga, kamu kembali ke halaman rumah adat. Kepala desa memintamu untuk menyimpan hasil panenmu. Dimanakah kamu menaruh hasil panenmu?</p>
+        <div class="answer"><button onclick="answerQuestion(5, 'a')">Di depan gebyok rumah adat</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'b')">Di dalam lumbung padi yang penuh aroma gabah</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'c')">Di bilik bambu yang sejuk dan teduh</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'd')">Di atas papan kayu di dekat tungku</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'e')">Di dapur belakang bersama ibu-ibu desa</button></div>
+        <div class="answer"><button onclick="answerQuestion(5, 'f')">Di dalam saung tempat warga berkumpul</button></div>
+    </div>
+
+    <div class="question" id="question6" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Sebagai tanda terima kasih, warga menyajikan kopi Baros hangat untukmu. Kopi mana yang kamu pilih untuk dinikmati bersama kepala desa?</p>
+        <div class="answer"><button onclick="answerQuestion(6, 'a')">Kopi susu hangat di gelas kaleng</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'b')">Kopi dalam kendi tanah liat</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'c')">Kopi dalam teko logam</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'd')">Kopi tubruk di cangkir tanah liat</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'e')">Kopi dalam termos</button></div>
+        <div class="answer"><button onclick="answerQuestion(6, 'f')">Kopi dalam dandang besar</button></div>
+    </div>
+
+    <div class="question" id="question7" style="display: none;">
+        <img class="logoTop" src="img/KathaRakyat x Nyawang Rasa Logo Sideways.png">
+        <p>Sambil menunggu makan malam disiapkan, kamu duduk menganyam bambu bersama warga. Apa yang kamu rasakan saat mulai menganyam bersama mereka?</p>
+        <div class="answer"><button onclick="answerQuestion(7, 'a')">Kagum pada keterampilan dan kesabaran mereka</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'b')">Ingin belajar lebih banyak tentang tradisi ini</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'c')">Merasa waktu berjalan lebih lambat dan damai</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'd')">Terinspirasi untuk membuat anyaman sendiri</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'e')">Tenang dan hangat, seperti di rumah sendiri</button></div>
+        <div class="answer"><button onclick="answerQuestion(7, 'f')">Seperti menjadi bagian dari keluarga Baros</button></div>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        var option1 = 0;
+        var option2 = 0;
+        var option3 = 0;
+        var option4 = 0;
+        var option5 = 0;
+        var option6 = 0;
+
+        var currentQuestion = 1;
+
+        document.getElementById('startQuiz').onclick = function() {
+        this.style.display = 'none';
+        document.getElementById('opening').style.display = 'none';
+        document.getElementById('question1').style.display = 'block';
+        document.getElementById('logoTop').style.display = 'block';
+    };
+
+        function answerQuestion(questionNumber, answer) {
+            if (questionNumber === 1) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'block';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+            } 
+            
+            else if (questionNumber === 2) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'block';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+            }
+
+            else if (questionNumber === 3) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'block';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+            }
+
+            else if (questionNumber === 4) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'block';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+            }
+
+            else if (questionNumber === 5) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'block';
+                document.getElementById('question7').style.display = 'none';
+            }
+
+            else if (questionNumber === 6) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'block';
+            }
+
+            else if (questionNumber === 7) {
+                if (answer === 'a') option1++;
+                else if (answer === 'b') option2++;
+                else if (answer === 'c') option3++;
+                else if (answer === 'd') option4++;
+                else if (answer === 'e') option5++;
+                else if (answer === 'f') option6++;
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('question3').style.display = 'none';
+                document.getElementById('question4').style.display = 'none';
+                document.getElementById('question5').style.display = 'none';
+                document.getElementById('question6').style.display = 'none';
+                document.getElementById('question7').style.display = 'none';
+                showResult();
+            }
+        }
+
+        function showResult() {
+        var maxOptionValue = Math.max(option1, option2, option3, option4, option5, option6);
+        var tiedOptions = [];
+
+        if (option1 === maxOptionValue) tiedOptions.push("NgajénanKaruhun.html");
+        if (option2 === maxOptionValue) tiedOptions.push("NgawariskeunKabudayaan.html");
+        if (option3 === maxOptionValue) tiedOptions.push("NgamumuleAlam.html");
+        if (option4 === maxOptionValue) tiedOptions.push("ReueuskaLemahCai.html");
+        if (option5 === maxOptionValue) tiedOptions.push("SomeahHadekaSemah.html");
+        if (option6 === maxOptionValue) tiedOptions.push("Sauyunan.html");
+        
+
+        // INI BUAT RANDOMLY PICK
+        var randomResult = tiedOptions[Math.floor(Math.random() * tiedOptions.length)];
+        window.location.href = randomResult;
+    }
+    </script>
+
+</body>
+</html>
