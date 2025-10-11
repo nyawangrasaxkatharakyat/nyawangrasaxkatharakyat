@@ -104,6 +104,7 @@ button:hover {
     background-image: url('../img/NgajenanKaruhunDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .NgawariskeunKabudayaan {
@@ -482,4 +483,5 @@ button:hover {
         bottom: 0;
     }
 }
+
 
