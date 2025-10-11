@@ -1,16 +1,16 @@
 @font-face {
     font-family: Header;
-    src: url(/font/youngserif-regular.ttf);
+    src: url('../font/youngserif-regular.ttf');
 }
 
 @font-face {
     font-family: SubHeader;
-    src: url(/font/Montserrat-Bold.ttf);
+    src: url('../font/Montserrat-Bold.ttf');
 }
 
 @font-face {
     font-family: Body;
-    src: url(/font/Montserrat-Regular.ttf);
+    src: url('../font/Montserrat-Regular.ttf');
 }
 
 *{
@@ -27,7 +27,7 @@ body {
     background-color: #EFE6D3;
     margin: 0;
     padding-top: 0;
-    background-image: url(/img/QUIZ\ BACKGROUND\ DESKTOP.png);
+    background-image: url('../img/QUIZ\ BACKGROUND\ DESKTOP.png');
     background-size: 100vw 100%;
     height: 100vh;
 }
@@ -101,37 +101,37 @@ button:hover {
 }
 
 .NgajénanKaruhun {
-    background-image: url(/img/NgajenanKaruhunDesktop.png);
+    background-image: url('../img/NgajenanKaruhunDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
 
 .NgawariskeunKabudayaan {
-    background-image: url(/img/NgawariskeunKabudayaanDesktop.png);
+    background-image: url('../img/NgawariskeunKabudayaanDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
 
 .NgamumuleAlam {
-    background-image: url(/img/NgamumuleAlamDesktop.png);
+    background-image: url('../img/NgamumuleAlamDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
 
 .ReueuskaLemahCai {
-    background-image: url(/img/ReueuskaLemahCaiDesktop.png);
+    background-image: url('../img/ReueuskaLemahCaiDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
 
 .SomeahHadekaSemah {
-    background-image: url(/img/SomeahHadekaSemahDesktop.png);
+    background-image: url('../img/SomeahHadekaSemahDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
 
 .Sauyunan {
-    background-image: url(/img/SauyunanDesktop.png);
+    background-image: url('../img/SauyunanDesktop.png');
     background-size: 100vw auto;
     background-repeat: no-repeat;
 }
@@ -206,7 +206,7 @@ button:hover {
         background-color: #EFE6D3;
         margin: 0;
         padding-top: 0;
-        background-image: url(/img/QUIZ\ BG\ HP.png);
+        background-image: url('../img/QUIZ\ BG\ HP.png');
         background-size: 100vw auto;
     }
 
@@ -262,27 +262,27 @@ button:hover {
     }
 
     .NgajénanKaruhun {
-        background-image: url(/img/NGAJENANIPAD.png);
+        background-image: url('../img/NGAJENANIPAD.png');
     }
 
     .NgawariskeunKabudayaan {
-        background-image: url(/img/NGAWARISKEUNIPAD.png);
+        background-image: url('../img/NGAWARISKEUNIPAD.png');
     }
 
     .NgamumuleAlam {
-        background-image: url(/img/NGAMUMULEIPAD.png);
+        background-image: url('../img/NGAMUMULEIPAD.png');
     }
 
     .ReueuskaLemahCai {
-        background-image: url(/img/REUEUSIPAD.png);
+        background-image: url('../img/REUEUSIPAD.png');
     }
 
     .SomeahHadekaSemah {
-        background-image: url(/img/SOMEAHIPAD.png);
+        background-image: url('../img/SOMEAHIPAD.png');
     }
 
     .Sauyunan {
-        background-image: url(/img/SAUYUNANIPAD.png);
+        background-image: url('../img/SAUYUNANIPAD.png');
     }
 
     .hasil {
@@ -348,7 +348,7 @@ button:hover {
 
 @media (max-width:600px) {
     body {
-        background-image: url(/img/QUIZ\ BG\ HP.png);
+        background-image: url('../img/QUIZ\ BG\ HP.png');
     }
 
     h1 {
@@ -398,27 +398,27 @@ button:hover {
     }
 
     .NgajénanKaruhun {
-        background-image: url(/img/NGAJENANHP.png);
+        background-image: url('../img/NGAJENANHP.png');
     }
 
     .NgawariskeunKabudayaan {
-        background-image: url(/img/NGAWARISKEUNHP.png);
+        background-image: url('../img/NGAWARISKEUNHP.png');
     }
 
     .NgamumuleAlam {
-        background-image: url(/img/NGAMUMULEHP.png);
+        background-image: url('../img/NGAMUMULEHP.png');
     }
 
     .ReueuskaLemahCai {
-        background-image: url(/img/REUEUSHP.png);
+        background-image: url('../img/REUEUSHP.png');
     }
 
     .SomeahHadekaSemah {
-        background-image: url(/img/SOMEAHHP.png);
+        background-image: url('../img/SOMEAHHP.png');
     }
 
     .Sauyunan {
-        background-image: url(/img/SAUYUNANHP.png);
+        background-image: url('../img/SAUYUNANHP.png');
     }
 
     .hasil {
@@ -482,3 +482,4 @@ button:hover {
         bottom: 0;
     }
 }
+
