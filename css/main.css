@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Header;
+    src: url(/font/youngserif-regular.ttf);
+}
+
+@font-face {
+    font-family: SubHeader;
+    src: url(/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(/font/Montserrat-Regular.ttf);
+}
+
 *{
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -12,6 +27,458 @@ body {
     background-color: #EFE6D3;
     margin: 0;
     padding-top: 0;
-    background-size: 100vw auto;
+    background-image: url(/img/QUIZ\ BACKGROUND\ DESKTOP.png);
+    background-size: 100vw 100%;
     height: 100vh;
+}
+
+h1 {
+    font-family: Header;
+    color: #352B22;
+    font-size: 3vw;
+    padding: 0 20vw;
+}
+
+h2 {
+    font-family: Header;
+    color: #352B22;
+    font-size: 2vw;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.question p {
+    font-family: SubHeader;
+    color: #352B22;
+    font-size: 1.3vw;
+    margin: 5vh 10vw;
+    padding: 0 15vw;
+}
+
+.logoTop {
+    width: 20vw;
+}
+
+.logoKatha {
+    width: 10vw;
+}
+
+.logoNyawang {
+    width: 25vw;
+}
+
+#startQuiz {
+    width: 15vw; 
+    height: 10vh; 
+    font-size: 1.5vw;
+}
+
+button {
+    padding: 1vh 1vw;
+    margin: 5px;
+    background-color: #822E24;
+    color: #EFE6D3;
+    border: none;
+    cursor: pointer;
+    font-family: Body;
+    font-size: 1vw;
+}
+
+button:hover {
+    background-color: #D09610;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 2vw;
+}
+
+.answer {
+    width: 100vw;
+    margin: 1vh 0;
+}
+
+.NgajénanKaruhun {
+    background-image: url(/img/NgajenanKaruhunDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.NgawariskeunKabudayaan {
+    background-image: url(/img/NgawariskeunKabudayaanDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.NgamumuleAlam {
+    background-image: url(/img/NgamumuleAlamDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.ReueuskaLemahCai {
+    background-image: url(/img/ReueuskaLemahCaiDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.SomeahHadekaSemah {
+    background-image: url(/img/SomeahHadekaSemahDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.Sauyunan {
+    background-image: url(/img/SauyunanDesktop.png);
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.hasil {
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    font-family: Header;
+    /* text-shadow: 0px 0px 4px #000000; */
+}
+
+.hasil h1, h2, h3, p {
+    color: #EFE6D3;
+}
+
+.hasil h1 {
+    font-size: 6vw;
+    margin: 0vw;
+}
+
+.hasil h2 {
+    font-size: 4vw;
+    margin: 1vw;
+}
+
+.hasil h3 {
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.hasil p {
+    font-size: 1.5vw;
+    margin: 1vw 25vw;
+    font-family: Body;
+}
+
+.logoKiri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    margin: 2vw;
+}
+
+.logoKanan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12vw;
+    margin: 2vw;
+    margin-top: 3vw;
+}
+
+.footer {
+    color: #EFE6D3;
+    font-size: 1.5vw;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    font-family: Body;
+    bottom: 0;
+    margin: 0;
+    background-color: #352B22;
+}
+
+@media (max-width:1024px) {
+    body {
+        text-align: center;
+        background-color: #EFE6D3;
+        margin: 0;
+        padding-top: 0;
+        background-image: url(/img/QUIZ\ BG\ HP.png);
+        background-size: 100vw auto;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+    font-family: Header;
+    color: #352B22;
+    font-size: 4vw;
+    }
+    
+    .question {
+        margin: 20px 0;
+    }
+    
+    .question p {
+        font-size: 2.8vw;
+        padding: 0 10vw;
+        margin: 5vh 0vw;
+    }
+
+    .logoTop {
+        width: 60vw;
+    }
+
+    .logoKatha {
+        width: 30vw;
+    }
+
+    .logoNyawang {
+        width: 35vw;
+    }
+    
+    #startQuiz {
+        width: 35vw; 
+        height: 7vh; 
+        font-size: 3vw;
+    }
+    
+    button {
+        width: 86vw;
+        padding: 1vh 5vw;
+        margin: 5px;
+        border-radius: 0.5vw;
+        font-size: 2.5vw;
+    }
+
+    .answer {
+        width: 86vw;
+        margin: 1vh 7vw;
+    }
+
+    .NgajénanKaruhun {
+        background-image: url(/img/NGAJENANIPAD.png);
+    }
+
+    .NgawariskeunKabudayaan {
+        background-image: url(/img/NGAWARISKEUNIPAD.png);
+    }
+
+    .NgamumuleAlam {
+        background-image: url(/img/NGAMUMULEIPAD.png);
+    }
+
+    .ReueuskaLemahCai {
+        background-image: url(/img/REUEUSIPAD.png);
+    }
+
+    .SomeahHadekaSemah {
+        background-image: url(/img/SOMEAHIPAD.png);
+    }
+
+    .Sauyunan {
+        background-image: url(/img/SAUYUNANIPAD.png);
+    }
+
+    .hasil {
+        width: 100vw;
+        height: 60vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .hasil h1, h2, h3, p {
+        color: #EFE6D3;
+    }
+
+    .hasil h1 {
+        font-size: 8vw;
+        margin: 0vw;
+        padding: 0 5vw;
+    }
+
+    .hasil h2 {
+        font-size: 6vw;
+        margin: 1vw;
+    }
+
+    .hasil h3 {
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    .hasil p {
+        font-size: 2.5vw;
+        margin: 2vw 15vw;
+        font-family: Body;
+    }
+
+    .logoKiri {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 17vw;
+        margin: 3vw;
+    }
+
+    .logoKanan {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 17vw;
+        margin: 3vw;
+        margin-top: 5vw;
+    }
+
+    .footer {
+        color: #EFE6D3;
+        font-size: 2.5vw;
+        width: 100vw;
+        position: absolute;
+        font-family: Body;
+        bottom: 0;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: url(/img/QUIZ\ BG\ HP.png);
+    }
+
+    h1 {
+        font-size: 7vw;
+        padding: 0 5vw;
+    }
+    
+    .question {
+        margin: 10px 0;
+    }
+    
+    .question p {
+        font-size: 4vw;
+        padding: 0 5vw;
+        margin: 5vh 5vw;
+    }
+    
+    .logoTop {
+        width: 60vw;
+    }
+
+    .logoKatha {
+        width: 30vw;
+    }
+
+    .logoNyawang {
+        width: 45vw;
+    }
+
+    #startQuiz {
+        width: 50vw; 
+        height: 7vh; 
+        font-size: 4.5vw;
+    }
+    
+    button {
+        width: 86vw;
+        padding: 1vh 5vw;
+        margin: 5px;
+        border-radius: 0.5vw;
+        font-size: 3.5vw;
+    }
+
+    .answer {
+        width: 86vw;
+        margin: 1vh 7vw;
+    }
+
+    .NgajénanKaruhun {
+        background-image: url(/img/NGAJENANHP.png);
+    }
+
+    .NgawariskeunKabudayaan {
+        background-image: url(/img/NGAWARISKEUNHP.png);
+    }
+
+    .NgamumuleAlam {
+        background-image: url(/img/NGAMUMULEHP.png);
+    }
+
+    .ReueuskaLemahCai {
+        background-image: url(/img/REUEUSHP.png);
+    }
+
+    .SomeahHadekaSemah {
+        background-image: url(/img/SOMEAHHP.png);
+    }
+
+    .Sauyunan {
+        background-image: url(/img/SAUYUNANHP.png);
+    }
+
+    .hasil {
+        width: 100vw;
+        height: 55vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .hasil h1, h2, h3, p {
+        color: #EFE6D3;
+    }
+
+    .hasil h1 {
+        font-size: 12vw;
+        margin: 0vw;
+        padding: 0 5vw;
+    }
+
+    .hasil h2 {
+        font-size: 7vw;
+        margin: 1vw;
+    }
+
+    .hasil h3 {
+        font-size: 7vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+
+    .hasil p {
+        font-size: 3vw;
+        margin: 2vw 8vw;
+        font-family: Body;
+        line-height: 1.5;
+    }
+
+    .logoKiri {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25vw;
+        margin: 5vw;
+    }
+
+    .logoKanan {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25vw;
+        margin: 5vw;
+        margin-top: 8vw;
+    }
+
+    .footer {
+        color: #EFE6D3;
+        font-size: 3.5vw;
+        width: 100vw;
+        position: absolute;
+        font-family: Body;
+        bottom: 0;
+    }
 }
